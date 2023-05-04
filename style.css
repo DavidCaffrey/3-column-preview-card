@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root{
+/* Colors */
+
+/* Primary */
+
+--primary-bright-orange: hsl(31, 77%, 52%);
+--primary-dark-cyan: hsl(184, 100%, 22%);
+--primary-v-dark-cyan: hsl(179, 100%, 13%);
+
+ /* Neutral */
+
+ /* paragraphs */
+--white: hsla(0, 0%, 100%, 0.75);
+/* background, headings, buttons */
+--v-light-grey: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding:2rem;
+}
+
+.container{
+    margin-bottom: 3rem;
+}
+
+.car-type{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    padding: 2rem;
+    height:70vh;
+    
+    max-width: 32ch;
+}
+
+.car-icon{
+    width: 4rem;
+    
+}
+
+.sedan{
+    background-color:var(--primary-bright-orange);
+    border-radius: 5px 5px 0 0 ;
+}
+
+.suv{
+    background-color: var(--primary-dark-cyan);
+}
+
+.luxury{
+    background-color: var(--primary-v-dark-cyan);
+    border-radius: 0 0 5px 5px;
+}
+
+.car-heading{
+    color: var(--white);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 40px;
+}
+
+.car-description{
+    color: var(--white);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+.btn{
+    max-width: 60%;
+    height:48px;
+    background-color: var(--v-light-grey);
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    
+}
+
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid var(--white);
+}
+
+.btn-sedan{
+    color: var(--primary-bright-orange);
+}
+
+.btn-sedan:hover{
+    background-color:var(--primary-bright-orange) ;
+    color:var(--white);
+}
+
+.btn-suv{
+    color: var(--primary-dark-cyan);
+}
+
+.btn-suv:hover{
+    background-color: var(--primary-dark-cyan);
+    color:var(--white);
+}
+
+.btn-lux{
+    color: var(--primary-v-dark-cyan);
+}
+
+.btn-lux:hover{
+    background-color: var(--primary-v-dark-cyan);
+    color:var(--white);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
